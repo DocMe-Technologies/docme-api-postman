@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "79d38978-86f9-4e47-a782-6dec910dae46",
+		"name": "DocMeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21553365"
+	},
+	"item": [
+		{
+			"name": "Upload Video",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					},
+					{
+						"key": "mode",
+						"value": "no-cors",
+						"type": "text"
+					},
+					{
+						"key": "Access-Control-Allow-Origin",
+						"value": "*",
+						"type": "text"
+					},
+					{
+						"key": "X-Token",
+						"value": "03b4885509789ba135b424f72ceeb293",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "video",
+							"type": "file",
+							"src": "/Users/claudiucarare/PythonProjects/command-test/Heart-rate-monitor/videos/video5.mp4"
+						},
+						{
+							"key": "timestamp",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://upload-prod.docme.ai/v1/measurement",
+					"protocol": "https",
+					"host": [
+						"upload-prod",
+						"docme",
+						"ai"
+					],
+					"path": [
+						"v1",
+						"measurement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Access-Control-Allow-Origin",
+						"value": "*",
+						"type": "text"
+					},
+					{
+						"key": "X-Token",
+						"value": "03b4885509789ba135b424f72ceeb293",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://upload-prod.docme.ai/v1/measurement/3f40452e-6bc8-43aa-b65a-345d89f757fe",
+					"protocol": "https",
+					"host": [
+						"upload-prod",
+						"docme",
+						"ai"
+					],
+					"path": [
+						"v1",
+						"measurement",
+						"3f40452e-6bc8-43aa-b65a-345d89f757fe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
