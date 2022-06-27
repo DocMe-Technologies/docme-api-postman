@@ -6,6 +6,8 @@
 - File -> Import -> DocMeAPI.postman_collection.json
 
 ## Run API Calls
+- Video example:
+	- https://github.com/DocMe-Technologies/docme-api-postman/blob/main/Screen%20Recording%202022-06-27%20at%2013.45.26.mov
 - POST Upload Video
 	- Headers:
 		- X-Token: change if provided or leave the default value
